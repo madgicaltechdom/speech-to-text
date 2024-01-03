@@ -5,19 +5,23 @@
 
 ## Description
 
-This repository utilizes the vakyansh models to convert speech into text for Indian languages.The user interface (UI) is powered by <a href='https://www.gradio.app/guides/quickstart'>Gradio</a>, providing an interactive and user-friendly experience. Additionally, we have deployed this application on <a href='https://huggingface.co/spaces/Bishan/Vakyansh-STT'>Hugging Face</a>.
-<br>
+This repository contains a simple FastAPI-based web service for performing speech-to-text (STT) using the transformers library. It supports both Hindi and English languages.
 
 ## Instruction
 To use this repository, follow these steps:
+1. Clone this repository:
+- https://github.com/madgicaltechdom/speech-to-text.git
+- cd your-repo
+2. Install the required dependencies:
+- pip install -r requirements.txt
+- pip install -r packages.txt
+- pip install fastapi
+- pip install uvicorn
+3. Run the FastAPI app:
+- uvicorn app:app --reload
+4. Test your API:
+- http://127.0.0.1:8000/speech-to-text
 
-1. Create a <a href='https://huggingface.co/docs/hub/spaces'>Hugging Face space</a>.
-2. Enter Space name.
-3. Select Gradio as Space SDK
-4. Click on Create space.
-5. In your newly created space, navigate to the "Files" section. Click on the "Add Files" button and upload the following files:
-    1. ```app.py```: Your application code.
-    2. ```requirements.txt```: A file containing the required packages for your application.
 
  
 
