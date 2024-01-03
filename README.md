@@ -20,7 +20,7 @@ To use this repository, follow these steps:
 3. Run the FastAPI app:
 - uvicorn app:app --reload
 4. Test your API:
-- http://127.0.0.1:8000/speech-to-text
+- http://127.0.0.1:8000/speech-to-text?language='English' or http://127.0.0.1:8000/speech-to-text?language='Hindi'
 
 
  
