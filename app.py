@@ -50,7 +50,7 @@ def parse(wav_file, language):
     return parse_transcription(logits, processor)
 
 @app.get("/speech-to-text")
-def get_transcription(file: UploadFile = File(...), language: str=''):
+def get_transcription(language: str=''):
     data = parse("english.wav", language) # parameter will be file and laguage
     with open("data.txt", "w") as f:
         f.write(data)
