@@ -6,7 +6,6 @@ import sox
 import subprocess
 from fastapi import FastAPI, File, Query, UploadFile, HTTPException
 from pydantic import BaseModel
-import os
 
 class InputRequest(BaseModel):
     output_language: str 
