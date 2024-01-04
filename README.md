@@ -18,6 +18,7 @@ To use this repository, follow these steps:
 - pip install -r packages.txt
 - pip install fastapi
 - pip install uvicorn
+- pip install pydantic
 
 3. Run the FastAPI app:
 - uvicorn app:app --reload
